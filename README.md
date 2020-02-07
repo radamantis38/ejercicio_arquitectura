@@ -14,3 +14,13 @@ Requisitos:
 - PHP, con libertad de elección del framework.
 - Deben simplificar su diseño de tal forma que pueda ser realizado en el tiempo estipulado.
 ```
+
+##Descripción y justificación
+Se implementa una clean arquitecture separando las capas por medio de interfaces, el modulo de acceso a datos se realiza utilizando el patron repositorio, la logica de negocio se separa en casos de uso.
+
+Se toma la descicion de utilizar clean arquitecture por que se quiere separar la logica de negocio y manejar los demas modulos como contextos.
+
+##Integrantes
+
+-Felipe Parra
+-Viviana Arango
