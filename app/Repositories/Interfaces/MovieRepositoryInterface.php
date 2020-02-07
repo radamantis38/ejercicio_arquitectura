@@ -13,5 +13,5 @@ interface MovieRepositoryInterface
      * @param array $params
      * @return array
      */
-    public function findBy(array $params = []): array;
+    public function findAll(): array;
 }

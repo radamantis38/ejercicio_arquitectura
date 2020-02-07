@@ -23,6 +23,7 @@ class EloquentMovieRepository implements MovieRepositoryInterface
      */
     public function __construct(Movie $movie)
     {
+
         $this->movie = $movie;
     }
 
@@ -31,14 +32,9 @@ class EloquentMovieRepository implements MovieRepositoryInterface
      * @param array $params
      * @return array
      */
-    public function findBy(array $params = []): array
+    public function findAll(): array
     {
-        if (!empty($params)){
-            $this->movie->where($params);
-        }
-
-        $movies = $this->movie->get();
-
+        $movies = $this->movie->all();
         return !empty($movies) ? $movies->toArray() : [];
     }
 }
